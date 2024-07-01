@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pocetna stranica">
+    <meta name="author" content="Stefan Sirkovic">
+    <title>Početna stranica</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/novistil.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a4c8976c94.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navigacija">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+          </button>
+          <a href="index.html"><img src="img/logo.png" class="img-fluid responsiveLogo" alt="Logo"> </a>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link aktivan" aria-current="page" href="index.html">Početna stranica</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="prodavnice.html">Prodavnice</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galerija.html">Galerija</a>
+              </li>
+            </ul>
+            <a href="index.html"><img src="img/logo.png" alt="Logo" class="img-fluid logo"></a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="kartica.html">Naručivanje kartica</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="anketa.html">Anketa</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="fadeIn">
+        <section class="clean-block slider dark">
+            <div class="container-fluid p-0 sliderContainer">
+              <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-image" id="prviSlajd">
+                      <div class="carousel-caption d-flex justify-content-center align-items-center">
+                        <div class="text-center">
+                          <h1 class="naslov">SopotMall</h1>
+                          <hr>
+                          <p>Otkrijte bezgranične mogućnosti šopinga u "SopotMall" - vašoj destinaciji za sve želje i potrebe!</p>
+                          <button class="btn dugme"><a href="#onama">Saznaj više</a></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-image" id="drugiSlajd">
+                        <div class="carousel-caption d-flex justify-content-center align-items-center">
+                          <div class="text-center">
+                            <h1 class="naslov">SopotMall</h1>
+                            <hr>
+                            <p>Istražite "SopotMall" i doživite šoping na potpuno nov način.</p>
+                            <button class="btn dugme"><a href="#onama">Saznaj više</a></button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-image" id="treciSlajd">
+                        <div class="carousel-caption d-flex justify-content-center align-items-center">
+                          <div class="text-center">
+                            <h1 class="naslov">SopotMall</h1>
+                            <hr>
+                            <p>Pronađite sve što vam je potrebno, od mode do tehnologije, na jednom mestu!</p>
+                            <button class="btn dugme"><a href="prodavnice.html">Naše radnje</a></button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div>
+                  <a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="0" class="active"></button>
+                  <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#carousel-1" data-bs-slide-to="2"></button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="vesti pb-5">
+            <div class="container">
+              <h1 class="text-center pt-4">Najnovije vesti</h1>
+              <hr class="w-50 m-auto">
+              <div class="row align-items-stretch">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div class="card h-80 karticaScale">
+                        <img src="img/sponzor.png" class="card-img-top vestiSlike mx-auto img-fluid" alt="Vest 1">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Produžujemo saradnju sa našim dugogodišnjim sponzorom!</h5>
+                          <p class="card-text">Sa zadovoljstvom obaveštavamo naše cenjene klijente da produžujemo saradnju sa našim dugogodišnjim partnerom i sponzorom. Radujemo se što ćemo nastaviti da stvaramo pozitivne promene i ostvarujemo uspehe u budućnosti. Rakuten je globalna kompanija koja pruža različite usluge.</p>
+                        </div>
+                        <div class="card-footer text-center bg-white">
+                          <a href="prodavnice.html" class="btn dugme">Saznaj još</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+                    <div class="card h-100 karticaScale">
+                        <img src="img/vestKartice.png" class="card-img-top vestiSlike mx-auto img-fluid mt-3" alt="Vest 2">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Nove poklon kartice!</h5>
+                          <p class="card-text">Darujte slobodu izbora i učinite nečiji dan posebnim sa našim poklon karticama! Sa našim širokim asortimanom proizvoda i usluga, poklon kartica je savršen način da voljenima pružite mogućnost da sami odaberu poklon po svojoj meri. Bilo da slavite rođendan, jubilej ili posebnu priliku, poklon kartice su tu za vas.</p>
+                        </div>
+                        <div class="card-footer text-center bg-white">
+                          <a href="kartica.html" class="btn dugme ">Saznaj još</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 mt-4">
+                    <div class="card h-100 karticaScale">
+                        <img src="img/vestProdavnice.png" class="card-img-top vestiSlike mx-auto img-fluid mt-3" alt="Vest 3">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Uskoro nekoliko novih poslovnica!</h5>
+                          <p class="card-text">Uskoro očekujte dodatak našem već bogatom izboru! Radujemo se da najavimo otvaranje nekoliko novih poslovnica u našem tržnom centru. Pripremite se za novu dimenziju šopinga i zabave, jer donosimo još više novih vrhunskih brendova i još mnogo posebnih i nezaboravnih iskustava. </p>
+                        </div>
+                        <div class="card-footer text-center bg-white">
+                          <a href="prodavnice.html" class="btn dugme ">Saznaj još</a>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+          
+          <section class="onama" id="onama">
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                    <h1 class="pt-4">O nama</h1>
+                    <hr class="w-50 m-auto pb-5">
+                    <p>Sa zadovoljstvom predstavljamo naš tržni centar, mesto gde se susreću elegancija, udobnost i beskrajne mogućnosti za sve ljubitelje šopinga i zabave. Nalazimo se na prestižnoj lokaciji u srcu Sopota, u ulici Kneza Miloša broj 72A, gde vas očekuje dobrodošlica u prostoru koji odražava modernu estetiku.</p>
+                    <p>Naša misija je da stvorimo iskustvo šopinga koje prevazilazi očekivanja, pružajući vam nezaboravne trenutke i beskrajne mogućnosti za zadovoljenje svih vaših potreba. Sa širokim spektrom brendova, prodavnica i usluga.</p>
+                    <a href="kontakt.html" class="btn dugmeNama mb-3 mt-5">Kontaktiraj nas</a>
+                  </div>
+                  <hr class="linija">
+                  <div class="col-sm-12 col-md-12 col-lg-5 d-flex ms-md-5 ps-sm-5 align-items-center ">
+                    <div class="row">
+                      <div class="col-sm-4 col-md-4">
+                        <img src="img/zara.png" class="onamaSlike" alt="Zara">
+                        <img src="img/HM.png" class="onamaSlike" alt="HM">
+                        <img src="img/nike.png"  class="onamaSlike" alt="Nike">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4 col-md-4">
+                        <img src="img/samsung.png" class="onamaSlike"  alt="Samsung">
+                        <img src="img/adidas.png" class="onamaSlike" alt="Adidas">
+                        <img src="img/mcdonalds.png" class="onamaSlike" alt="McDonalds">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4 col-md-4">
+                        <img src="img/lacoste.png" class="onamaSlike" alt="Lacoste">
+                        <img src="img/huawei.png" class="onamaSlike"  alt="Huawei">
+                        <img src="img/rebook.png" class="onamaSlike"  alt="Rebook">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+          <section id="mapa">
+            <div class="container-fluid mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45504.33736052933!2d20.53203025981962!3d44.53520082755822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4750a42e796e4147%3A0x2107de6333e0a3d!2z0KHQvtC_0L7Rgg!5e0!3m2!1ssr!2srs!4v1714514156729!5m2!1ssr!2srs" class="w-100" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </section>
+
+          <section class="pocetnaGalerija">
+                <div class="container">
+                  <h1 class="text-center pt-4">Galerija slika</h1>
+                  <hr class="w-50 m-auto">
+                    <div class="text-center mt-5 mb-4">
+                      <a href="galerija.html" class="galerijaPocetna"><img src="img/pocetnaGalerija.png" class="img-fluid rounded galerijaPocetna" alt="Pocetna galerija"></a>
+                      <a href="galerija.html" class="btn mt-5 mb-5 btn-outline-info">Pogledaj galeriju <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+          </section>
+
+      </main>
+
+      <footer class="footer text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h5>O nama</h5>
+                <p>Naš tržni centar nudi širok asortiman proizvoda i usluga, kreiran sa ciljem da zadovolji potrebe svih naših posetilaca. Posetite nas i doživite vrhunsko iskustvo šopinga i zabave.</p>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <h5>Stranice</h5>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Početna stranica</a></li>
+                <li><a href="prodavnice.html">Prodavnice</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="kartica.html">Poklon kartice</a></li>
+                <li><a href="anketa.html">Anketa</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h5>Kontakt</h5>
+              <p>Adresa: Kneza Miloša 72A, Sopot</p>
+              <p>Email: info@sopotmall.com</p>
+              <p>Telefon: +381 11 123 456</p>
+              <p>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x px-2 karticaScale"></i>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x px-2 karticaScale"></i>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter fa-2x px-2 karticaScale"></i>
+                </p>
+            </div>
+            <hr>
+            <div class="col-sm-12 text-center">
+                © 2024 Stefan Sirković
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+</body>
+</html>
+

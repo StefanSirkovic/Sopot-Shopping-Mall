@@ -1,0 +1,122 @@
+/*navigacija*/
+$bojaTekst: #FFFFFF;
+$bojaPozadina: rgba(10, 43, 74, 0.85);
+$font: "Montserrat", sans-serif;
+$velicina:1em;
+$bojaHover: rgba(10, 43, 74);
+$udaljenost: 0 25px 0 25px;
+
+.navigacija{
+    background-color: $bojaPozadina;
+    .nav-item{
+        padding: $udaljenost;
+        .nav-link{
+            font-family: $font;
+            font-size:$velicina;
+            color:$bojaTekst;
+            text-decoration: none;
+            text-wrap: nowrap;
+            &:hover{
+                color: $bojaHover;
+            }
+            &:active{
+                color: $bojaHover;
+            }
+            &:focus{
+                color:$bojaHover;
+            }
+        }  
+    }
+    .logo{
+        margin:$udaljenost;
+    }
+
+    .aktivan{
+        font-weight: bold;
+    }
+    .responsiveLogo{
+        display: none;
+    }
+
+    @media only screen and (max-width: 1600px) {
+        .nav-item{
+            padding: 0 8px 0 8px;
+        }
+        .nav-link{
+            font-size:0.5em;
+        }
+        .logo{
+            margin:0 10px 0 10px;
+        }
+     }
+
+    @media only screen and (max-width: 991px) {
+        .logo{
+         display: none;
+        }
+        .responsiveLogo{
+            display: block;
+        }
+     }
+}
+
+/*anketa*/
+$bojaDugme: rgba(10, 43, 74, 0.85);
+$bojaDugmeHover: rgba(10, 43, 74);
+$senka: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+$borderBoja: #3b4d61;
+$pozadinaStatistika: #f8f9fa;
+$niska: #FF0000;
+$srednja: #FFA500;
+$visoka: #4CAF50;
+
+
+#anketaForma {
+    margin-bottom: 40px;
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      &:focus {
+        outline: none;
+        border-color: $borderBoja;
+        box-shadow: $senka;
+      }
+    }
+    button {
+      display: block;
+      width: 100%;
+      background-color: $bojaDugme;
+      &:hover{
+        background-color: $bojaDugmeHover;
+      }
+    }
+  }
+  
+  #statistika {
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: $pozadinaStatistika;
+    
+    .statistikaDiv{
+        width: 60px;
+      }
+      .niskiDiv{
+        background-color: $niska;
+        height: 25px;
+        margin-top:75px;
+      }
+      .srednjiDiv{
+        background-color: $srednja;
+        height: 50px;
+        margin-top:50px;
+      }
+      .visokiDiv{
+        background-color: $visoka;
+        height: 100px
+      }
+  }
+  

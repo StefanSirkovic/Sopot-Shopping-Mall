@@ -1,0 +1,100 @@
+/*navigacija*/
+.navigacija {
+  background-color: rgba(10, 43, 74, 0.85);
+}
+.navigacija .nav-item {
+  padding: 0 25px 0 25px;
+}
+.navigacija .nav-item .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+.navigacija .nav-item .nav-link:hover {
+  color: rgb(10, 43, 74);
+}
+.navigacija .nav-item .nav-link:active {
+  color: rgb(10, 43, 74);
+}
+.navigacija .nav-item .nav-link:focus {
+  color: rgb(10, 43, 74);
+}
+.navigacija .logo {
+  margin: 0 25px 0 25px;
+}
+.navigacija .aktivan {
+  font-weight: bold;
+}
+.navigacija .responsiveLogo {
+  display: none;
+}
+@media only screen and (max-width: 1600px) {
+  .navigacija .nav-item {
+    padding: 0 8px 0 8px;
+  }
+  .navigacija .nav-link {
+    font-size: 0.5em;
+  }
+  .navigacija .logo {
+    margin: 0 10px 0 10px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .navigacija .logo {
+    display: none;
+  }
+  .navigacija .responsiveLogo {
+    display: block;
+  }
+}
+
+/*anketa*/
+#anketaForma {
+  margin-bottom: 40px;
+}
+#anketaForma select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#anketaForma select:focus {
+  outline: none;
+  border-color: #3b4d61;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+#anketaForma button {
+  display: block;
+  width: 100%;
+  background-color: rgba(10, 43, 74, 0.85);
+}
+#anketaForma button:hover {
+  background-color: rgb(10, 43, 74);
+}
+
+#statistika {
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+#statistika .statistikaDiv {
+  width: 60px;
+}
+#statistika .niskiDiv {
+  background-color: #FF0000;
+  height: 25px;
+  margin-top: 75px;
+}
+#statistika .srednjiDiv {
+  background-color: #FFA500;
+  height: 50px;
+  margin-top: 50px;
+}
+#statistika .visokiDiv {
+  background-color: #4CAF50;
+  height: 100px;
+}/*# sourceMappingURL=style.css.map */

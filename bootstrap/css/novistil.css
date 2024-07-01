@@ -1,0 +1,238 @@
+body{
+    overflow-x: hidden;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+.naslov{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 10px;
+    font-size: 2.5em;
+}
+
+.sliderContainer{
+    max-width: 100% !important;
+}
+#prviSlajd{
+    background-image: url(../../img/slider1.png);
+}
+#drugiSlajd{
+    background-image: url(../../img/slider2.png);
+}
+#treciSlajd{
+    background-image: url(../../img/slider3.png);
+}
+#prviSlajdKartice{
+  background-image: url(../../img/poklonKartica.png);
+  height: 100vh;
+  object-fit: contain;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+@media (min-width: 768px) {
+    .carousel-inner img {
+      max-height: 800px;
+    }
+    
+  }
+  .carousel-image {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .dugme{
+    background-color:rgba(10, 43, 74, 0.80);
+    width: 150px;
+    color:#FFFFFF;
+  }
+  .dugme:hover{
+    background-color:rgb(20, 53, 84);
+    color: #FFFFFF;
+  }
+  .onama{
+    background-color: rgba(248, 249, 250, 0.4);
+  }
+  .vestiSlike{
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+  }
+  
+  .dugmeNama{
+    background-color:rgba(10, 43, 74, 0.80);
+    width: 250px;
+    color:#FFFFFF;
+    margin-bottom: 100px !important;
+  }
+  .dugmeNama:hover{
+    background-color:rgb(20, 53, 84);
+    color: #FFFFFF;
+  }
+  .mapa{
+    padding: 0;
+    
+  }
+  .footer {
+    background-color: rgba(10, 43, 74, 0.80);
+    color: #ffffff;
+    padding: 50px 0;
+  }
+  
+  .footer a {
+    color: #ffffff;
+  }
+  
+  .footer a:hover {
+    color: #f8f9fa;
+  }
+  
+  .footer h5 {
+    color: #f8f9fa;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .footer p {
+    color: #f8f9fa;
+  }
+  .linija{
+    border-left: 2px solid black;
+    height: 500px;
+    width: 0px;
+    margin-top:4%;
+    padding: 0 !important;
+  }
+  @media (max-width: 1000px) {
+    
+    .linija{
+      display: none;
+    }
+  }
+
+  .onamaSlike{
+    width: 85px;
+  }
+ 
+  .galerijaPocetna:hover{
+      transform: scale(1.03);
+      transition: transform 0.6s ease-in-out;
+  }
+  .slikeProdavnica{
+    height: 300px;
+    object-fit: cover;
+  }
+  .slikaOverlay{
+    object-fit: contain;
+  }
+
+  .mapaCentraSlika{
+    width: 600px;
+    height: 500px;
+    object-fit: contain;
+    margin-bottom:50px;
+  }
+
+  .mapaCentraSlika:hover{
+    transform: scale(1.05);
+      transition: transform 0.6s ease-in-out;
+      cursor: pointer;
+  }
+
+  .karticaScale:hover{
+    transform: scale(1.03);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .photo-gallery img{
+    height: 250px;
+    width: 100%;
+    object-fit:cover;
+  }
+  .photo-gallery img{
+    border-radius: 5px;
+}
+
+.lightbox img:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.giftKartica{
+  object-fit: contain;
+  width: 100vw;
+  height: 100vh;
+  margin:0;
+  padding: 0;
+}
+
+.porudzbina{
+  position: absolute;
+  display: none !important;
+}
+
+.overlay{
+  opacity: 0.2;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+textarea{
+  resize: none;
+}
+.dugme{
+  text-wrap: nowrap;
+  width: 200px;
+}
+.kontakt{
+  margin-bottom: 60px !important;
+}
+.kontaktKolona{
+  width: 600px;
+}
+.kontaktDrugaKolona{
+  text-align: center;
+  display: block;
+}
+.kontaktMapa{
+  margin-bottom:70px; 
+  padding-bottom: 70px;
+  border-radius:15px;
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnimacija 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimacija {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover{
+  background-color: black;
+}
